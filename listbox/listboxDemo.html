@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Navigation Listbox</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+  </head>
+  <body>
+
+    <h1>Navigation Listbox</h1>
+	<label for="fullName">Enter Full Name</label>
+    <input id="fullName" type="text" name="name">
+
+    
+
+    <p id="labelTxt"><label for="categoryLbl">Category</label></p>
+
+    <button id="categoryLbl" class="drop-btn small" aria-label="Category Select a category" aria-pressed="false" aria-expanded="false">
+      <div class="drop-title">
+        <span id="placeholderTxt">Select a category</span>
+      </div>
+      <div class="drop-icon">
+        <i id="drop-chevron" class="dropdown-chevron dropdown-chevron-down"></i>
+      </div>
+    </button>
+
+    <div id="categoryDropdown" class="dropdown-content">
+      <ul id="appListbox"
+              tabindex="0"
+              role="listbox"
+              aria-label="Select a category"
+              aria-owns="option1 option2 option3 option4 option5 option6">
+              <li role="presentation"><a href="#"
+                     role="option"
+                     id="option1"
+                     tabindex="0"
+                     class="active"
+                     aria-selected="true"
+                     aria-posinset="1"
+                     aria-setsize="6"
+                     >Everyday Checking
+                    
+                   </a>
+              </li>
+              <li role="presentation"><a href="#"
+                     role="option"
+                     id="option2"
+                     tabindex="-1"
+                     aria-selected="false"
+                     aria-posinset="2"
+                     aria-setsize="6"
+                     >Preferred Checking</a>
+              </li>
+              <li role="presentation"><a href="#"
+                     role="option"
+                     id="option3"
+                     tabindex="-1"
+                     aria-selected="false"
+                     aria-posinset="3"
+                     aria-setsize="6"
+                     >PMA Checking</a>
+              </li>
+              <li role="presentation"><a href="#"
+                     role="option"
+                     id="option4"
+                     tabindex="-1"
+                     aria-selected="false"
+                     aria-posinset="4"
+                     aria-setsize="6"
+                     >Premier Checking</a>
+              </li>
+              <li role="presentation"><a href="#"
+                     role="option"
+                     id="option5"
+                     tabindex="-1"
+                     aria-selected="false"
+                     aria-posinset="5"
+                     aria-setsize="6"
+                     >Platinum Savings</a>
+              </li>
+              <li role="presentation"><a href="#"
+                     role="option"
+                     id="option6"
+                     tabindex="-1"
+                     aria-selected="false"
+                     aria-posinset="6"
+                     aria-setsize="6"
+                     >Wells Fargo CDs</a>
+              </li>
+      </ul>
+    </div>
+
+    <h2>Credit Card Information</h2>
+    <div>
+	  <label for="cardNumber">Enter Card Number</label>
+      <input id="cardNumber" type="text" name="name">
+    </div>
+	
+	<h2 class="filterTxt" tabindex="-1">
+      <span class="ftext" id="cName">Everyday Checking</span>
+    </h2>
+	<div class="hidden" id="everydayCheckingText"><p>This is placeholder text for Every Day Checking.</p><p>Lorem ipsum dolor sit amet, quod dicta invidunt ne vel, mel posse iriure voluptatibus et, meliore alienum te pri. Maluisset euripidis mei at, id vis docendi copiosae reprehendunt. Vim dissentiunt efficiantur concludaturque ne. Pri id dolore partem doctus. Ut hinc prima equidem mei, dictas vocent sed id.</p></div>
+	<div class="hidden" id="preferredCheckingText"><p>This is placeholder text for Preferred Checking.</p><p>Lorem ipsum dolor sit amet, quod dicta invidunt ne vel, mel posse iriure voluptatibus et, meliore alienum te pri. Maluisset euripidis mei at, id vis docendi copiosae reprehendunt. Vim dissentiunt efficiantur concludaturque ne. Pri id dolore partem doctus. Ut hinc prima equidem mei, dictas vocent sed id.</p></div>
+	<div class="hidden" id="pmaCheckingText"><p>This is placeholder text for PMA Checking.</p><p>Lorem ipsum dolor sit amet, quod dicta invidunt ne vel, mel posse iriure voluptatibus et, meliore alienum te pri. Maluisset euripidis mei at, id vis docendi copiosae reprehendunt. Vim dissentiunt efficiantur concludaturque ne. Pri id dolore partem doctus. Ut hinc prima equidem mei, dictas vocent sed id.</p></div>
+	<div class="hidden" id="premierCheckingText"><p>This is placeholder text for Premier Checking.</p><p>Lorem ipsum dolor sit amet, quod dicta invidunt ne vel, mel posse iriure voluptatibus et, meliore alienum te pri. Maluisset euripidis mei at, id vis docendi copiosae reprehendunt. Vim dissentiunt efficiantur concludaturque ne. Pri id dolore partem doctus. Ut hinc prima equidem mei, dictas vocent sed id.</p></div>
+	<div class="hidden" id="platinumSavingsText"><p>This is placeholder text for Platinum Savings.</p><p>Lorem ipsum dolor sit amet, quod dicta invidunt ne vel, mel posse iriure voluptatibus et, meliore alienum te pri. Maluisset euripidis mei at, id vis docendi copiosae reprehendunt. Vim dissentiunt efficiantur concludaturque ne. Pri id dolore partem doctus. Ut hinc prima equidem mei, dictas vocent sed id.</p></div>
+	<div class="hidden" id="wellsFargoCdsText"><p>This is placeholder text for Wells Fargo CDs.</p><p>Lorem ipsum dolor sit amet, quod dicta invidunt ne vel, mel posse iriure voluptatibus et, meliore alienum te pri. Maluisset euripidis mei at, id vis docendi copiosae reprehendunt. Vim dissentiunt efficiantur concludaturque ne. Pri id dolore partem doctus. Ut hinc prima equidem mei, dictas vocent sed id.</p></div>
+	<a href="#">Link to FAQ</a>
+  </body>
+  <script src="JS/myscript.js"></script>
+</html>
